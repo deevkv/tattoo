@@ -53,8 +53,8 @@
     <div class="page-main__wrapper">
         <section class="preview">
           <h1 class="visually-hidden">Preview</h1>
-          <h2 class="preview_title">Tattoo studio</h2>
-          <button class="preview__button button__sing-up">Sing up</button>
+          <h2 class="preview__title"><span>Tattoo studio</span></h2>
+          <a class="preview__button button__sing-up" href="#">Sing up</a>
           <p class="preview__description preview__description--up">We have created ideal conditions for the convenience of work of the masters and comfort of our customers</p>
           <p class="preview__description">Syndicate Tattoo Studio is a completely new studio format where professionals have the freedom to create and realize themselves.</p>
         </section>
@@ -78,7 +78,7 @@
         </section>
 
         <section class="comfort-safety">
-          <h2 class="comfort-safety">Comfort and safety</h2>
+          <h2 class="comfort-safety__title">Comfort and safety</h2>
           <p class="comfort-safety__description">The Tattoo Syndicate Salon is comfortable for customers and employees - there are cozy chairs and couches for visitors where they can relax, as well as comfortable workplaces for craftsmen.</p>
 
           <p class="comfort-safety__description">The studio is equipped with the latest technology - it is modern tools and equipment, the best devices for disinfection and sterilization, safe quality paint. It is mandatory to use disposable needles, gloves, caps for paints, etc., after each client, tattoo machines and the workplace of the master are treated with special solutions. Workrooms regularly disinfect with a bactericidal ultraviolet lamp that destroys all microorganisms and bacteria.</p>
@@ -92,7 +92,11 @@
           <p class="about__description">Our hand-picked tattoo artists are committed to providing you with the highest quality art and custom tattoo design available in New York City. We also feature guest tattoo artists from around the world. We care about our tattoo art and try our best to make it show with every custom piece we do.</p>
           <button class="about__botton"></button>
             
-          <video class="about__video" src="#"></video>
+          <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+            <source src="video/about.mp4"> 
+            <source src="video/about.webm"> 
+          </video>
+
         </section>
         
         <section class="portfolio"> 
@@ -109,42 +113,43 @@
 
         <section class="prices">
           <h2 class="prices__title">Prices</h2>
-          <details>
-            <summary>Consultation Wizard</summary>
-            <span>Sign up for a consultation at a convenient time for you. <button>Sing up</button></span>
+          <details class="prices__item summary">
+            <summary class="summary__title">Consultation Wizard</summary>
+            <span class="summary__description">Sign up for a consultation at a convenient time for you. <button>Sing up</button></span>
           </details>
-          <details>
-            <summary>Miniature tattoo</summary>
-            <span>A miniature tattoo includes images of a format less than 10x10 cm. The procedure for applying such tattoos takes no more than 1 hour and fits into one session. A miniature tattoo can include small characters, patterns and inscriptions with a minimum number of colors and low detail.</span>
+          <details class="prices__item summary">
+            <summary class="summary__title">Miniature tattoo</summary>
+            <span class="summary__description">A miniature tattoo includes images of a format less than 10x10 cm. The procedure for applying such tattoos takes no more than 1 hour and fits into one session. A miniature tattoo can include small characters, patterns and inscriptions with a minimum number of colors and low detail.</span>
           </details>
-          <details>
-            <summary>Tattoo large size</summary>
-            <span>The large size of the tattoo includes work, usually requiring lengthy sessions. The procedure for applying such images takes more than 5 hours. For example, a full-color drawing in the style of "realism", from the shoulder to the bend of the arm, may require a session lasting more than 6 hours. Depending on the complexity and detail of the picture, there may be several such sessions.</span>
+          <details class="prices__item summary">
+            <summary class="summary__title">Tattoo large size</summary>
+            <span class="summary__description">The large size of the tattoo includes work, usually requiring lengthy sessions. The procedure for applying such images takes more than 5 hours. For example, a full-color drawing in the style of "realism", from the shoulder to the bend of the arm, may require a session lasting more than 6 hours. Depending on the complexity and detail of the picture, there may be several such sessions.</span>
           </details>
-          <details>
-            <summary>Full-length tattoo.The cost of an hour of work.</summary>
-            <span>The full-size tattoo includes large-scale work requiring several lengthy sessions. One procedure for applying such images takes more than 30 hours. For example, applying a full-color picture to the entire back, may require 5 to 8 sessions of 6-8 hours each. Typically, such projects are paid at an hourly rate.</span>
+          <details class="prices__item summary">
+            <summary class="summary__title">Full-length tattoo.The cost of an hour of work.</summary>
+            <span class="summary__description">The full-size tattoo includes large-scale work requiring several lengthy sessions. One procedure for applying such images takes more than 30 hours. For example, applying a full-color picture to the entire back, may require 5 to 8 sessions of 6-8 hours each. Typically, such projects are paid at an hourly rate.</span>
           </details>
-
         </section>
         
         <section class="contacts">
           <h2 class="visually-hidden">Contacts</h2>
             <h3 class="contacts__title">Hours of operation</h3>
-            <ul>
-              <li>Mon – Thurs: 11am to 9pm</li>
-              <li>Fri – Sat: 11am – 11pm</li>
-              <li>Sun: 12pm to 9pm</li>
+            <ul class="contacts__list">
+              <li class="contacts__item">Mon – Thurs: 11am to 9pm</li>
+              <li class="contacts__item">Fri – Sat: 11am – 11pm</li>
+              <li class="contacts__item">Sun: 12pm to 9pm</li>
             </ul>
             <h3 class="contacts__title">contacts</h3>
-            <ul>
-              <li>Email:appointments@soho.ink</li>
-              <li>Tel: 8 495 678 43 22</li>
+            <ul class="contacts__list">
+              <li class="contacts__item">Email:appointments@soho.ink</li>
+              <li class="contacts__item">Tel: 8 495 678 43 22</li>
             </ul>
             <h3 class="contacts__title">Location</h3>
-            <p class="contacts__discription">PRINCE & LAFAYETTE 285 Lafayette St. New York, New York 10012</p>
+            <ul class="contacts__list">
+              <li class="contacts__item"><span>Prince & Lafayette</span> 285 Lafayette St. New York, New York 10012</li>
+            </ul>
           </div>
-          <button class="contacts__button button__sing-up">Sing up</button>
+          <a class="contacts__button button__sing-up" href="#">Sing up</a>
 
           <section class="form__feedback">
               <h2 class="visually-hidden">Contact form</h2> 
@@ -163,7 +168,7 @@
                 </p>
                 <p>
                 <b class="form__input-title indicates">Leave a message</b>
-                <textarea class="indicates" rows="10" cols="45" name="text"></textarea>
+                <textarea class="indicates" rows="10" cols="15" name="text"></textarea>
                 </p>
                 <p><input class="button button-contacts" type="submit" value="Send"></p>
               </form>
@@ -172,14 +177,17 @@
           </section>
         </section>
 
-        <section class="Location">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.6105596340726!2d37.750311315932336!3d55.79999998056605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b534e197cd4021%3A0x82a948d68b46588f!2z0KfQtdGA0LrQuNC30L7QstGB0LrQuNC5INGA0YvQvdC-0LosINCc0L7RgdC60LLQsCwgMTA1MTIy!5e0!3m2!1sru!2sru!4v1486575824690" width="600" height="450" allowfullscreen></iframe>
-        </section>
+      <!--   <section class="Location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1176573260996!2d-73.9977502988232!3d40.737436507256845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bd58d22923%3A0xb07b24dbb1359d30!2zNTEgVyAxNHRoIFN0ICMyUiwgTmV3IFlvcmssIE5ZIDEwMDExLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1565262856142!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section> -->
     </div>
   </main>
 
   <footer>
     <span>Developed by <a href="">kirilldeev.ru</a></span>
   </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYOtebsnPg4IOnJj9uJayhTBAgoF0CPuo"></script>
 </body>
+
 </html> 
+
