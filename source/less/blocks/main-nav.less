@@ -2,9 +2,14 @@
 	
 }
 
-.main-nav--closed {
+.main-nav--closed .main-nav__wrapper {
   display: none;
 }
+
+.main-nav--open .main-nav__wrapper {
+  display: block;
+}
+
 .main-nav__wrapper {
   padding: 30px;
   background-color: #01283E ;
@@ -81,3 +86,6 @@
   transform: rotate(-45deg);
 }
 
+@media (min-width: @tablet-width) {
+  
+}
