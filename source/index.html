@@ -141,40 +141,46 @@
         
         <section class="contacts">
           <h2 class="visually-hidden">Contacts</h2>
+          <article class="contacts__block">
             <h3 class="contacts__title">Hours of operation</h3>
             <ul class="contacts__list">
               <li class="contacts__item">Mon – Thurs: 11am to 9pm</li>
               <li class="contacts__item">Fri – Sat: 11am – 11pm</li>
               <li class="contacts__item">Sun: 12pm to 9pm</li>
             </ul>
+          </article>
+          <article class="contacts__block">  
             <h3 class="contacts__title">contacts</h3>
             <ul class="contacts__list">
-              <li class="contacts__item">Email:appointments@soho.ink</li>
+              <li class="contacts__item">Email:info@rd.com</li>
               <li class="contacts__item">Tel: 8 495 678 43 22</li>
             </ul>
+          </article>
+          <article class="contacts__block">    
             <h3 class="contacts__title">Location</h3>
             <ul class="contacts__list">
               <li class="contacts__item"><span>Prince & Lafayette</span> 285 Lafayette St. New York, New York 10012</li>
             </ul>
+          </article>  
           </div>
           <a class="contacts__button button__sing-up" href="#">Sing up</a>
 
           <section class="form-feedback">
               <h2 class="form-feedback__title">Feedback form</h2> 
-              <form action="#" method="post">
-                <p>
+              <form class="form-feedback__form"  action="#" method="post">
+                <p class="form-feedback__name">
                   <label class="visually-hidden">First name</label>
                   <input type="text" name="first name" placeholder="Login">
                 </p>
-                <p>
+                <p class="form-feedback__email">
                   <label class="visually-hidden">E-mail</label>
                   <input type="e-mail" required name="e-mail" placeholder="E-mail">
                 </p>
-                <p>
+                <p class="form-feedback__phone">
                   <label class="visually-hidden">Phone number</label>
                   <input type="phone" required name="phone" placeholder="Phone number">
                 </p>
-                <p>
+                <p class="form-feedback__message">
                 <textarea class="indicates" rows="10" cols="15" name="text" placeholder="Message"></textarea>
                 </p>
                 <p><input class="form__button button__contacts" type="submit" value="Send"></p>
