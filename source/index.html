@@ -16,39 +16,42 @@
           <img src="img/logo.svg" alt="Logo">
       </a>  
       
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="page-header__block">
           <div class="page-header__block-main">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Open menu</span>
             </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="docs.html">Portfolio</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="community.html">Price</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="downloads.html">About</a>
+                </li>
+                 <li class="site-list__item">
+                  <a href="downloads.html">Contacts</a>
+                </li>        
+              </ul>
+            </div>
+            <ul class="main-nav__list contact-list">
+              <li class="contact-list__item">
+                <a class="contact-list__login" href="#">Tel: 8 495 678 43 22</a>
+              </li>
+            </ul>
+
           </div>
         </div>
         
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="site-list__item">
-              <a href="docs.html">Portfolio</a>
-            </li>
-            <li class="site-list__item">
-              <a href="community.html">Price</a>
-            </li>
-            <li class="site-list__item">
-              <a href="downloads.html">About</a>
-            </li>
-             <li class="site-list__item">
-              <a href="downloads.html">Contacts</a>
-            </li>        
-          </ul>
-          <ul class="main-nav__list contact-list">
-            <li class="contact-list__item">
-              <a class="contact-list__login" href="#">Tel: 8 495 678 43 22</a>
-            </li>
-          </ul>
-        </div>  
+        
+
       </nav>
     </div>
   </header>

@@ -1,23 +1,46 @@
-.main-nav {
-	
-}
-
-.main-nav--closed .main-nav__wrapper {
+.main-nav--closed .main-nav__wrapper .site-list{
   display: none;
 }
 
-.main-nav--open .main-nav__wrapper {
-  display: block;
-}
+.main-nav--closed .main-nav__wrapper {
+  padding: 20px 30px;
+} 
+
 
 .main-nav__wrapper {
+  position: relative;
+  margin-right: 43px;
   padding: 30px;
-  background-color: #01283E ;
+  padding-bottom: 10px;
+  background-color: #068EDA;
+  /* clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%); */
+}
+
+
+.main-nav--closed .main-nav__wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -42px;  
+  width: 42px;
+  min-height: 40px;
+  background: linear-gradient(to left top, transparent 48.5%, #068EDA 50%);
+}
+
+
+.main-nav--opened .main-nav__wrapper {
+  margin: 0;
+} 
+
+
+.main-nav--closed .main-nav__wrapper {
+  margin-right: 45px;
 }
 
 .main-nav__list {
 	margin: 0;
 	padding: 0;
+  padding-bottom: 0;
 	text-align: center;
 	list-style-type: none;
 }
@@ -32,7 +55,7 @@
   display: block;
   float: right;
   top: 2px    ;
-  right: 40px;
+  right: 50px;
 
   width: 35px;
   height: 35px;
@@ -87,5 +110,77 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__list {
+    padding: 0;
+  }
+
+  .main-nav__wrapper {
+    background-color: inherit;
+    padding: 0;
+    width: 100%;
+  }
   
+  .main-nav__toggle {
+    position: absolute;
+    top: 16px;
+    left: 365px;
+  }
+
+  .main-nav--opened .site-list {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 8px;
+  }
+
+
+  .main-nav--closed .main-nav__wrapper .site-list {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    margin-right: 9px;
+    padding: 0;
+    background-color: #068EDA;
+    min-width: 500px;
+    max-width: 499px;
+  } 
+
+  .main-nav--opened .main-nav__wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -42px;  
+    width: 42px;
+    height: 100%;
+    background: linear-gradient(to left top, transparent 48.5%, #068EDA 50%);
+  }
 }
+
+@media (min-width: @desktop-width) {
+
+  .main-nav--opened .site-list {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    background-color: inherit;
+    width: 100%;
+    max-width: 100%;
+  } 
+
+
+  .main-nav__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-nav__wrapper:before {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+} 
