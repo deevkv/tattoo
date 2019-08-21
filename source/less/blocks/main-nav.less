@@ -123,8 +123,12 @@
   .main-nav__toggle {
     position: absolute;
     top: 16px;
-    left: 365px;
+    left: 44%;
   }
+
+ .main-nav--closed .main-nav__toggle {
+  left: 47%;
+} 
 
   .main-nav--opened .site-list {
     display: block;
@@ -133,16 +137,14 @@
   }
 
 
-  .main-nav--closed .main-nav__wrapper .site-list {
-    display: none;
-  }
-
   .main-nav--closed .main-nav__wrapper {
     margin-right: 9px;
     padding: 0;
     background-color: #068EDA;
-    min-width: 500px;
-    max-width: 499px;
+    min-width: 30px;
+    min-width: 400px;
+    width: 50%;
+
   } 
 
   .main-nav--opened .main-nav__wrapper:before {

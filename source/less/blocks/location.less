@@ -10,11 +10,17 @@
     height:100%;
     width:100%;
     position:absolute;
-   	filter: grayscale(100%) invert(100%);
-   	transition: .5s ease-in-out;
+    filter: grayscale(100%) invert(100%);
+    transition: .5s ease-in-out;
 }
 
 .location iframe:hover,
 .location iframe:focus {
-	filter: grayscale(0%) invert(0%);
+    filter: grayscale(0%) invert(0%);
+}
+
+@media (min-width: @tablet-width) {
+    .location { 
+      padding-bottom: 35%;
+    }
 }

@@ -67,7 +67,7 @@
     overflow:hidden;
     background-color: #134a84;
     background-image: url(../img/preview.jpg);
-    background-position: 25%;
+    background-position: -150px;
     background-repeat: no-repeat;
     background-size: 880px auto;
 
@@ -78,9 +78,9 @@
     content:'';
     position:absolute;
     top: 0; 
-    left: 30%/* 100px */;
+    left: 10%/* 100px */;
     width:100%; height:100%;
-    background-color: #000000;
+    background-color: #07100f;
 /*     border-left:40px solid rgba(173, 96, 223, .8); */
     transform-origin:100% 100%;
     transform:skewX(-43deg);
@@ -90,7 +90,7 @@
     content:'';
     position:absolute;
     top:0; 
-    left: 30%/* 52px */;
+    left: 10%/* 52px */;
     width:50px; height:100%;
     background:  linear-gradient(180deg, #01283E 43.75%, rgba(255, 255, 255, 0) 100%), #0954AC;
     transform-origin:100% 100%;
@@ -100,8 +100,8 @@
 
   .preview__wrapper-content {
     position: relative;
-    width: 526px;
-    padding-left: 292px;
+    width: 512px;
+    padding-left: 268px;
     margin: 0 auto;
     display: block;
     z-index: 1;
@@ -132,3 +132,31 @@
 
 }
 
+
+@media (min-width: @tablet-pro-width) {
+   .preview {
+    background-position: -15%;
+  }
+
+  .preview:before {
+    left: 23%;
+  }
+
+  .preview:after {
+    left: 22%;
+  }
+}  
+
+ @media (min-width: @desktop-width) {
+  .preview {
+    background-position: 25%;
+  }
+
+  .preview:before {
+    left: 30%;
+  }
+
+  .preview:after {
+    left: 30%;
+  }
+} 
