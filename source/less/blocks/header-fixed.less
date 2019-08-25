@@ -1,0 +1,24 @@
+.main-nav--closed .header-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	animation-name: show-header;
+	animation-duration: 1s;
+}
+
+.header-fixed .site-list {
+	padding-left: 80px;
+}
+
+@keyframes show-header{
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}

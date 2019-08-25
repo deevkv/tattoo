@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header id="home" class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
           <img src="img/logo.svg" alt="Logo">
@@ -24,19 +24,19 @@
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
-                  <a href="index.html">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="docs.html">Portfolio</a>
+                  <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="community.html">Price</a>
+                  <a href="#prices">Prices</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="downloads.html">About</a>
+                  <a href="#about">About</a>
                 </li>
                  <li class="site-list__item">
-                  <a href="downloads.html">Contacts</a>
+                  <a href="#contacts">Contacts</a>
                 </li>        
               </ul>
             </div>
@@ -130,11 +130,11 @@
           </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
           <div class="about__wrapper">
             <h2 class="about__title">About</h2>
             <p class="about__description">Our hand-picked tattoo artists are committed to providing you with the highest quality art and custom tattoo design available in New York City. We also feature guest tattoo artists from around the world. We care about our tattoo art and try our best to make it show with every custom piece we do.</p>
-            <a class="about__botton-play"></a>
+            <a class="about__botton-play" href="https://www.youtube.com/watch?v=Sn7tOOEbE2g"></a>
           </div>  
           <video class="about__video"  autoplay="autoplay" loop="loop" preload="auto">
             <source src="video/about.mp4"> 
@@ -143,7 +143,7 @@
 
         </section>
         
-        <section class="portfolio"> 
+        <section id="portfolio" class="portfolio"> 
           <h2 class="visually-hidden">Portfolio</h2> 
           <h3 class="portfolio__title">The team</h3>
           <p class="portfolio__item">Our artists come from many different art school backgrounds, completed degree programs and have studied and tattooed with the best of the best in studios and conventions around the world. Our tattoo work, paintings and drawings have been published in tattoo and art magazines worldwide and we have all participated in fine art gallery exhibitions.</p> 
@@ -155,7 +155,7 @@
           <button class="portfolio__button ">See more works</button>   
         </section>
 
-        <section class="prices">
+        <section id="prices" class="prices">
           <h2 class="prices__title">Prices</h2>
           <details class="prices__item summary">
             <summary class="summary__title">Consultation Wizard</summary>
@@ -174,7 +174,7 @@
             <span class="summary__description">The full-size tattoo includes large-scale work requiring several lengthy sessions. One procedure for applying such images takes more than 30 hours. For example, applying a full-color picture to the entire back, may require 5 to 8 sessions of 6-8 hours each. Typically, such projects are paid at an hourly rate.</span>
           </details>
         </section>
-        <div class="contacts__wrapper">
+        <div id="contacts" class="contacts__wrapper">
           <section class="contacts">
             <h2 class="visually-hidden">Contacts</h2>
             <article class="contacts__block">
@@ -200,9 +200,6 @@
             </article> 
             <a class="contacts__button button__sing-up" href="#">Sing up</a> 
           </section>
-
-
-
           <section class="form-feedback">
             <h2 class="form-feedback__title">Feedback form</h2> 
             <form class="form-feedback__form"  action="#" method="post">
@@ -233,6 +230,9 @@
   <footer class="footer">
     <span class="footer__description">Developed by <a href="">kirilldeev.ru</a></span>
   </footer>
+
+   <script src="js/scroll.js"></script>
+   <script src="js/header-fixed.js"></script>
 </body>
 
 </html> 
