@@ -3,6 +3,8 @@
 	height: 55px;
 	margin: 0 auto;
 
+	position: relative;
+
 	border: 3px solid #10A9FF;
 	box-sizing: border-box;
 
@@ -19,22 +21,99 @@
 
 	text-decoration: none;
 	color: #FF7A00;
+
+	transition: .5s;
+	overflow: hidden;
 }
+
+
+.button__sing-up::before,
+.button__sing-up::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background-color: #10A9FF;
+	opacity: .5;
+	transition: .3s;
+	z-index: -1;
+}
+
+.button__sing-up::after {
+	opacity: 1;
+	transition-delay: .2s;
+}
+
+
+.button__sing-up:hover {
+	color: #ffffff;
+}
+
+.button__sing-up:hover::before,
+.button__sing-up:hover::after {
+	left: 0;
+}
+
 
 .button__contacts {
 	width: 215px;
 	height: 65px;
 	display: block;
 	margin: 0 auto;
+	position: relative;
 	text-transform: uppercase;
 	color: #ffffff;
 	border: 4px solid #ffffff;
-	background-color: #07100F;
+	background-color: inherit;
 	font-size: 30px; 
+
+	transition: .5s;
+	overflow: hidden;
+}
+
+.button__contacts::before,
+.button__contacts::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background-color: #ffffff;
+	opacity: .5;
+	transition: .3s;
+	z-index: -1;
+}
+
+.button__contacts::after {
+	opacity: 1;
+	transition-delay: .2s;
+}
+
+.button__contacts:hover {
+	color: #000000;
+}
+
+.button__contacts:hover::before,
+.button__contacts:hover::after {
+	left: 0;
 }
 
 @media (min-width: @tablet-width) {
 	.button__sing-up {
 		width: 232px;
+
 	}
 }	
+
+@media (min-width: @desktop-width) {
+	.button__contacts {
+		margin: 0;
+	}
+
+	.button__sing-up {
+		height: 65px;
+	}
+}

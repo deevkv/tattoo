@@ -31,6 +31,15 @@
   color: #ffffff;
   border: 4px solid #1C1C1C;
   background-color: #07100F;
+  transition: .5s;
+  
+}
+
+.portfolio__button:hover {
+  border-color: #10A9FF;
+  transition:.5s;
+
+
 }
 
 @media (min-width: @tablet-width) {
@@ -41,6 +50,7 @@
     padding: 15px;
     padding-top: 120px;
     padding-bottom: 45px;
+    box-sizing: border-box;
   }
   .portfolio__item {
     margin: 0;
@@ -51,6 +61,17 @@
   .portfolio__image {
     display: flex;
     margin-top: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .portfolio {
+    width: 1140px;
+    padding-bottom: 145px;
+    
+  }
+  .portfolio__image {
+    margin-top: 95px;
   }
 }
 

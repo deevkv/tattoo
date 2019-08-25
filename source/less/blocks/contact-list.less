@@ -13,7 +13,19 @@
 	padding: 20px;
 }
 
+.main-nav--opened .contact-list__wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 @media (min-width: @tablet-width) {
+	.contact-list__wrapper {
+		width: 300px;
+	}
+
 	.contact-list {
 		background-color: inherit;
   }  
@@ -31,17 +43,15 @@
 
   .main-nav--closed .contact-list {
   	display: block;
-  	margin-left: 40px;
+  	height: 100%;
 	}
 
 	 .main-nav--opened .contact-list {
-  	
   	background-color: inherit;
 	}
 
 	.contact-list {
 		margin: 0;
-		width: 400px;
 		position: relative;
 		background: #10A9FF;
 		/* clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%); */
@@ -80,11 +90,8 @@
 	  right: 2px;
 	  bottom: 2px;
 		background-color: #01283E;
-		/* clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 108%); */
-	}
-
-	.contact-list__item {
 		padding-top: 7px;
+		/* clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 108%); */
 	}
 
 	 .main-nav--opened .contact-list__item {
@@ -97,26 +104,33 @@
 } 
 
 @media (min-width: @desktop-width) {
-	
+	.contact-list__wrapper {
+		width: 400px;
+	}
+
+	.main-nav--opened .contact-list__wrapper,
+	.main-nav--closed .contact-list__wrapper {
+		width: 400px;
+	}
+
 	.main-nav--opened .contact-list {
   	display: block;
-  	width: 400px;
   	background: #10A9FF;
-  	
   }
 
    .main-nav--opened .contact-list__item {
   		position: absolute;
-  		background-color: #01283E;
-  		
+  		background-color: #01283E;	
 	}
 
 	.contact-list {
 		background: #10A9FF;
+		height: 100%;
 	}
 
 	.contact-list__item {
 		background-color: #01283E;
+		padding-top: 7px;
 	}
 
 	.main-nav--opened .contact-list:before {
@@ -143,31 +157,6 @@
 		  z-index: 99;
 		  float: right;
 	}
-
-
-
-/* 	.contact-list {
-	margin: 0;
-	width: 400px;
-	position: relative;
-	background: #10A9FF;
-	
-	clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
-}
-
-.contact-list__item {
-	position: absolute;
-	top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-	background-color: #01283E;
-	clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 108%);
-}
-
-.contact-list__item {
-	padding-top: 7px;
-} */
 }	
 
 

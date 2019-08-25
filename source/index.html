@@ -15,7 +15,6 @@
       <a class="page-header__logo" href="index.html">
           <img src="img/logo.svg" alt="Logo">
       </a>  
-      
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="page-header__block">
           <div class="page-header__block-main">
@@ -41,17 +40,45 @@
                 </li>        
               </ul>
             </div>
-            <ul class="main-nav__list contact-list">
-              <li class="contact-list__item">
-                <a class="contact-list__login" href="#">Tel: 8 495 678 43 22</a>
-              </li>
-            </ul>
-
+            <div class="contact-list__wrapper">
+              <ul class="main-nav__list contact-list">
+                <li class="contact-list__item">
+                  <a class="contact-list__tel" href="#">Tel: 8 495 678 43 22</a>
+                </li>
+              </ul>
+              <ul class="contact-list__social social-list">
+                <li class="social-list__item">
+                  <a href="#">
+                    <svg class="social-list__icon--nav" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#">
+                    <svg class="social-list__icon" width="28" height="19.6">
+                      <use xlink:href="img/sprite.svg#icon-youtube-play"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#">
+                    <svg class="social-list__icon--nav" width="25" height="19.44">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#">
+                    <svg class="social-list__icon" width="12" height="26">
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li> 
+              </ul>
+            </div>   
           </div>
-        </div>
-        
-        
-
+        </div>        
       </nav>
     </div>
   </header>
@@ -59,22 +86,23 @@
   <main class="page-main">
     <div class="page-main__wrapper">
         <section class="preview">
-
           <h1 class="visually-hidden">Preview</h1>
-
           <div class="preview__wrapper-content">
-            <h2 class="preview__title"><span>Tattoo studio</span></h2>
+            <h2 class="preview__title">
+              <div class="preview__title-wrapper">
+                <span>Tattoo studio</span>
+              </div>
+            </h2>
             <p class="preview__description preview__description--up">We have created ideal conditions for the convenience of work of the masters and comfort of our customers</p>
             <p class="preview__description">Syndicate Tattoo Studio is a completely new studio format where professionals have the freedom to create and realize themselves.</p>
             <a class="preview__button button__sing-up" href="#">Sing up</a>
           </div> 
-
         </section>
 
         <section class="advantages">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--shadow">
               <h3 class="advantages__title">Artistic tattoo</h3>
               <p class="advantages__description">The art tattoo is an imprint of an internal ego on your body. You always choose which picture to capture: be it a philosophical thought, a life-affirming appeal, a hieroglyph or something that specifically symbolizes you.</p>
             </li>
@@ -82,7 +110,7 @@
               <h3 class="advantages__title">Correction and overlap of tattoos</h3>
               <p class="advantages__description">Often, in pursuit of a more attractive price or not having complete information about the process and the intricacies of the application, people get a poor quality tattoo. Our masters have extensive practice in solving such problems.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages-item--bg-border">
               <h3 class="advantages__title">Development of individual sketches</h3>
               <p class="advantages__description">A good tattoo implies an original idea and a unique design. We are against mindless copying and adhere to an individual approach when working with each client.</p>
             </li>
@@ -131,7 +159,7 @@
           <h2 class="prices__title">Prices</h2>
           <details class="prices__item summary">
             <summary class="summary__title">Consultation Wizard</summary>
-            <span class="summary__description">Sign up for a consultation at a convenient time for you. <button>Sing up</button></span>
+            <span class="summary__description">Sign up for a consultation at a convenient time for you. <a class="contacts__button button__sing-up" href="#">Sing up</a></span>
           </details>
           <details class="prices__item summary">
             <summary class="summary__title">Miniature tattoo</summary>
@@ -146,58 +174,57 @@
             <span class="summary__description">The full-size tattoo includes large-scale work requiring several lengthy sessions. One procedure for applying such images takes more than 30 hours. For example, applying a full-color picture to the entire back, may require 5 to 8 sessions of 6-8 hours each. Typically, such projects are paid at an hourly rate.</span>
           </details>
         </section>
-        
-        <section class="contacts">
-          <h2 class="visually-hidden">Contacts</h2>
-          <article class="contacts__block">
-            <h3 class="contacts__title">Hours of operation</h3>
-            <ul class="contacts__list">
-              <li class="contacts__item">Mon – Thurs: 11am to 9pm</li>
-              <li class="contacts__item">Fri – Sat: 11am – 11pm</li>
-              <li class="contacts__item">Sun: 12pm to 9pm</li>
-            </ul>
-          </article>
-          <article class="contacts__block">  
-            <h3 class="contacts__title">contacts</h3>
-            <ul class="contacts__list">
-              <li class="contacts__item">Email:info@rd.com</li>
-              <li class="contacts__item">Tel: 8 495 678 43 22</li>
-            </ul>
-          </article>
-          <article class="contacts__block">    
-            <h3 class="contacts__title">Location</h3>
-            <ul class="contacts__list">
-              <li class="contacts__item"><span>Prince & Lafayette</span> 285 Lafayette St. New York, New York 10012</li>
-            </ul>
-          </article>  
-          </div>
-          <a class="contacts__button button__sing-up" href="#">Sing up</a>
+        <div class="contacts__wrapper">
+          <section class="contacts">
+            <h2 class="visually-hidden">Contacts</h2>
+            <article class="contacts__block">
+              <h3 class="contacts__title">Hours of operation</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">Mon – Thurs: 11am to 9pm</li>
+                <li class="contacts__item">Fri – Sat: 11am – 11pm</li>
+                <li class="contacts__item">Sun: 12pm to 9pm</li>
+              </ul>
+            </article>
+            <article class="contacts__block">  
+              <h3 class="contacts__title">contacts</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">Email:info@rd.com</li>
+                <li class="contacts__item">Tel: 8 495 678 43 22</li>
+              </ul>
+            </article>
+            <article class="contacts__block">    
+              <h3 class="contacts__title">Location</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item"><span>Prince & Lafayette</span> 285 Lafayette St. New York, New York 10012</li>
+              </ul>
+            </article> 
+            <a class="contacts__button button__sing-up" href="#">Sing up</a> 
+          </section>
+
+
 
           <section class="form-feedback">
-              <h2 class="form-feedback__title">Feedback form</h2> 
-              <form class="form-feedback__form"  action="#" method="post">
-                <p class="form-feedback__name">
-                  <label class="visually-hidden">First name</label>
-                  <input type="text" name="first name" placeholder="Login">
-                </p>
-                <p class="form-feedback__email">
-                  <label class="visually-hidden">E-mail</label>
-                  <input type="e-mail" required name="e-mail" placeholder="E-mail">
-                </p>
-                <p class="form-feedback__phone">
-                  <label class="visually-hidden">Phone number</label>
-                  <input type="phone" required name="phone" placeholder="Phone number">
-                </p>
-                <p class="form-feedback__message">
-                <textarea class="indicates" rows="10" cols="15" name="text" placeholder="Message"></textarea>
-                </p>
-                <p><input class="form__button button__contacts" type="submit" value="Send"></p>
-              </form>
-          </form>
-
+            <h2 class="form-feedback__title">Feedback form</h2> 
+            <form class="form-feedback__form"  action="#" method="post">
+              <p class="form-feedback__name">
+                <label class="visually-hidden">First name</label>
+                <input type="text" name="first name" placeholder="Login">
+              </p>
+              <p class="form-feedback__email">
+                <label class="visually-hidden">E-mail</label>
+                <input type="e-mail" required name="e-mail" placeholder="E-mail">
+              </p>
+              <p class="form-feedback__phone">
+                <label class="visually-hidden">Phone number</label>
+                <input type="phone" required name="phone" placeholder="Phone number">
+              </p>
+              <p class="form-feedback__message">
+              <textarea class="indicates" rows="10" cols="15" name="text" placeholder="Message"></textarea>
+              </p>
+              <p><button class="form__button button__contacts" type="submit" value="Send">Send</button></p>
+            </form>
           </section>
-        </section>
-
+      </div>
       <section class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1176573260996!2d-73.9977502988232!3d40.737436507256845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bd58d22923%3A0xb07b24dbb1359d30!2zNTEgVyAxNHRoIFN0ICMyUiwgTmV3IFlvcmssIE5ZIDEwMDExLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1565262856142!5m2!1sru!2sua" width="320" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>

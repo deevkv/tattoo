@@ -32,9 +32,11 @@
     margin: 0 auto;
 		padding: 15px;
 		padding-top: 85px;
-		padding-bottom: 45px;
+		padding-bottom: 0;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		box-sizing: border-box;
 	}
 
 	.contacts__block {
@@ -47,6 +49,35 @@
 	}
 
 	.contacts__button {
-		margin-top: 0;
+		margin-top: 45px;
 	}
 }	
+
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+  	width: 1140px;
+  	margin: 0 auto;
+  	padding: 0 97px;
+  	padding-top: 138px;
+  	padding-bottom:115px;
+		display: flex;
+		box-sizing: border-box;
+  }
+	.contacts {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	.contacts__block {
+		margin-bottom: 60px;
+	}
+
+	.contacts__button {
+		margin: 0;
+	}
+
+}

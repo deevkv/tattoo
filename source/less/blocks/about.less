@@ -48,6 +48,9 @@
 	border: 4px solid  #009DF5;
 	cursor: pointer; 
 	background-color: inherit;
+	transition: .5s;
+	
+	
 }	
 
 .about__botton-play::before {
@@ -60,7 +63,17 @@
 	border-top: 12px solid transparent;
 	border-left: 20px solid  #ffffff;
 	border-bottom: 12px solid transparent;
+	transition: .5s;
 }
+
+.about__botton-play:hover {
+	transform: scale(1.2); 
+	border-color: #FF7A00;
+  transition: .5s;
+	
+}
+
+
 
 @media (min-width: @tablet-width) {
 	.about {
@@ -77,4 +90,15 @@
 		width: 100%;
 		min-height: 464px;
 	}
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    width: 1140px;
+    padding-top: 138px;
+  }
+
+  .about__video {
+  	min-height: 645px;
+  }
 }

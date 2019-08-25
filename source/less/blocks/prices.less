@@ -27,10 +27,40 @@
 
 @media (min-width: @tablet-width) {
 	.prices { 
+		position: relative;
 		width: 768px;
     margin: 0 auto;
+    box-sizing: border-box;
 	}
-	
+
+	.prices:after {
+    content: "";
+    position: absolute;
+    top: -76px;
+    right: -2px;
+    width: 216px;
+    height: 76px;
+    background: url("../img/border.png") no-repeat;
+  } 
+
+  .prices:before {
+    content: "";
+    position: absolute;
+    top: -76px;
+    left: -2px;
+    width: 216px;
+    height: 76px;
+    background: url("../img/border.png") no-repeat;
+    transform: scale(-1, 1);
+  } 
+}
+
+@media (min-width: @desktop-width) {
+  .prices {
+    width: 1140px;
+    
+
+  }
 }
 
 

@@ -23,13 +23,25 @@
 
 @media (min-width: @tablet-width) {
   .comfort-safety {
+    position: relative;
     width: 768px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
+  }
+
+  .comfort-safety:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -2px;
+    width: 216px;
+    height: 76px;
+    background: url("../img/border.png") no-repeat;
   } 
 
   .comfort-safety__image {
@@ -47,4 +59,30 @@
     padding-bottom: 35px;
     width: 390px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .comfort-safety {
+    width: 1140px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .comfort-safety__image {
+    width: 580px;
+    height: 772px;
+  }
+
+  .comfort-safety__wrapper {
+    width: 435px;
+    margin-left: 58px;
+    padding-bottom: 0;
+    align-self: center;
+
+
+  }
+
+
+
 }
