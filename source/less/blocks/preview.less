@@ -15,10 +15,13 @@
   height: 280px;
   
 
-  background:
-    linear-gradient(90deg, rgba(213, 56, 114, 0.48) 4.17%,
-    rgba(213, 56, 114, 0.48) 4.18%, #0C6495 23.99%, #00A9BD 59.35%,
-    rgba(255, 255, 255, 0) 99.31%), #10A9FF;
+/*   background:
+  linear-gradient(90deg, rgba(213, 56, 114, 0.48) 4.17%,
+  rgba(213, 56, 114, 0.48) 4.18%, #0C6495 23.99%, #00A9BD 59.35%,
+  rgba(255, 255, 255, 0) 99.31%), #10A9FF; */
+
+  background: linear-gradient(90deg, #d53872, #0c6495, #53bdd6, #10a9ff);
+  background-size: 800% 800%;
 
   box-sizing: border-box;
   box-shadow: 0px 19px 24px rgba(0, 0, 0, 0.39);
@@ -35,6 +38,15 @@
   margin: 0 auto;
 
   order: 1;
+  
+
+  animation: AnimationName 8s ease-in-out infinite;
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .preview__title-wrapper {

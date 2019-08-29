@@ -26,8 +26,8 @@ gulp.task("serve", function() {
 
 	gulp.watch("source/less/**/*.less", gulp.parallel("style", reload));
 	gulp.watch("source/*.html", gulp.parallel("html", reload));
+	gulp.watch("source/**/*.js", gulp.parallel("build", reload));
 }); 
-
 
 gulp.task("style", function() {
 	return gulp.src("source/less/**/*.less")
@@ -78,8 +78,6 @@ gulp.task("sprite", function() {
 		.pipe(rename("sprite.svg"))
 		.pipe(gulp.dest("build/img"));
 });
-
-
 
 gulp.task("html", function() {
 	return gulp.src("source/*.html")

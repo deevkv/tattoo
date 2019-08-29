@@ -101,10 +101,48 @@
 	left: 0;
 }
 
+.button__up {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	background-color: #068EDA;
+	border: none;
+	z-index: 1000;
+	opacity: 1;
+	box-shadow: 0px 19px 10px rgba(0, 0, 0, 0.39);
+  transition: all 0.5s;
+}
+
+.button__up:hover {
+	background-color: #10A9FF;
+}
+
+.button__show {
+		visibility: hidden;
+	}
+
+	.button__hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+
+
+
 @media (min-width: @tablet-width) {
 	.button__sing-up {
 		width: 232px;
+	}
 
+		.button__show {
+		visibility: visible;
+	}
+
+	.button__hidden {
+		opacity: 0;
+		visibility: hidden;
 	}
 }	
 
@@ -116,4 +154,5 @@
 	.button__sing-up {
 		height: 65px;
 	}
+
 }

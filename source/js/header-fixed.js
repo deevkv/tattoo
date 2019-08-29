@@ -1,10 +1,19 @@
-window.onscroll = function showHeader() {
+window.addEventListener ('scroll', function() {
     const header = document.querySelector('.main-nav__wrapper');
     if(window.pageYOffset > 200){
         header.classList.add('header-fixed');
-        console.log('good');
     } else{
         header.classList.remove('header-fixed');
-        console.log('very good');
     }
-}
+});
+
+
+
+/*window.onscroll = function showHeader() {
+    const header = document.querySelector('.main-nav__wrapper');
+    if(window.pageYOffset > 200){
+        header.classList.add('header-fixed');
+    } else{
+        header.classList.remove('header-fixed');
+    }
+}*/

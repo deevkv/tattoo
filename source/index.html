@@ -15,7 +15,7 @@
       <a class="page-header__logo" href="index.html">
           <img src="img/logo.svg" alt="Logo">
       </a>  
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="page-header__block">
           <div class="page-header__block-main">
             <button class="main-nav__toggle" type="button">
@@ -134,13 +134,12 @@
           <div class="about__wrapper">
             <h2 class="about__title">About</h2>
             <p class="about__description">Our hand-picked tattoo artists are committed to providing you with the highest quality art and custom tattoo design available in New York City. We also feature guest tattoo artists from around the world. We care about our tattoo art and try our best to make it show with every custom piece we do.</p>
-            <a class="about__botton-play" href="https://www.youtube.com/watch?v=Sn7tOOEbE2g"></a>
+            <a class="about__button-play"></a>
           </div>  
           <video class="about__video"  autoplay="autoplay" loop="loop" preload="auto">
             <source src="video/about.mp4"> 
             <source src="video/about.webm"> 
           </video>
-
         </section>
         
         <section id="portfolio" class="portfolio"> 
@@ -148,9 +147,9 @@
           <h3 class="portfolio__title">The team</h3>
           <p class="portfolio__item">Our artists come from many different art school backgrounds, completed degree programs and have studied and tattooed with the best of the best in studios and conventions around the world. Our tattoo work, paintings and drawings have been published in tattoo and art magazines worldwide and we have all participated in fine art gallery exhibitions.</p> 
           <ul class="portfolio__image image-list">
-            <li class="image-list__item"><img src="img/portfolio-01.jpg" alt="Foto tatoo"></li>
-            <li class="image-list__item"><img src="img/portfolio-02.jpg" alt="Foto tatoo"></li>
-            <li class="image-list__item"><img src="img/portfolio-03.jpg" alt="Foto tatoo"></li>
+            <li class="image-list__item full"><img src="img/portfolio-01.jpg" alt="Foto tatoo"></li>
+            <li class="image-list__item full"><img src="img/portfolio-02.jpg" alt="Foto tatoo"></li>
+            <li class="image-list__item full"><img src="img/portfolio-03.jpg" alt="Foto tatoo"></li>
           </ul>
           <button class="portfolio__button ">See more works</button>   
         </section>
@@ -230,9 +229,24 @@
   <footer class="footer">
     <span class="footer__description">Developed by <a href="">kirilldeev.ru</a></span>
   </footer>
+  <button  id="top" class="button__up button__hidden">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+      <path d="M21.57 19.2L24 16.778L12 4.80005L0 16.778L2.43 19.2L12 9.65305L21.57 19.2Z" fill="#AEAEAE"/>
+    </svg>
+  </button>
+
+  <section class="modal-youtube modal-youtube--closed">
+    <div class=" modal-youtube__content">
+      <div id="player"></div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/oyvcTOHFl6w?controls=0&amp;start=134" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+  </section>
 
    <script src="js/scroll.js"></script>
    <script src="js/header-fixed.js"></script>
+   <script src="js/scroll-top.js"></script>
+   <script src="js/player.js"></script>
+   <script src="js/modal.js"></script>
 </body>
 
 </html> 
