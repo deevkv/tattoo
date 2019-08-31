@@ -7,6 +7,7 @@ var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
+var cheerio = require('gulp-cheerio');
 var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -75,9 +76,21 @@ gulp.task("sprite", function() {
 		.pipe(svgstore({
 			inlineSvg: true
 		}))
+		.pipe(cheerio({
+            run: function ($) {
+                $('[fill]').removeAttr('fill');
+            },
+            parserOptions: { xmlMode: true }
+        }))
 		.pipe(rename("sprite.svg"))
 		.pipe(gulp.dest("build/img"));
 });
+
+
+cheerio
+
+
+
 
 gulp.task("html", function() {
 	return gulp.src("source/*.html")
