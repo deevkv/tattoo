@@ -10,6 +10,7 @@
   width: 5px;
   height: 21px;
   background-color: #068EDA;
+  transition: all .5s;
 }
 
 .summary::after {
@@ -20,6 +21,12 @@
   width: 21px;
   height: 5px;
   background-color: #068EDA;
+  transition: all .5s;
+}
+
+details[open]::before {
+  transition: all .5s;
+  transform: rotate(90deg);
 }
 
 .summary__title {
@@ -94,7 +101,6 @@ details[open] summary ~ * {
     height: 6px;
     background-color: #068EDA;
   }
-
 
   .summary__title {
     display: flex;
