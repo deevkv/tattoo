@@ -1,32 +1,69 @@
 .summary {
-	
+  position: relative;
+}
+
+.summary::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 18px;
+  width: 5px;
+  height: 21px;
+  background-color: #068EDA;
+}
+
+.summary::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 10px;
+  width: 21px;
+  height: 5px;
+  background-color: #068EDA;
 }
 
 .summary__title {
+  display: flex;
 	padding: 21px;
+  padding-left: 45px;
 	font-size: 20px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
+.summary__title p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.summary__title span {
+  margin-left: auto;
+}
+
+.summary__title--small {
+  display: inline-block;
+  margin-left: 5px;
+  text-transform: lowercase;
+  margin-right: auto;
+}
+
+.summary__title--small:first-letter {
+  text-transform: uppercase;
+} 
+
 .summary__description {
-	display: block;
+  margin: 0;
 	padding: 15px;
+	display: block;
 	text-align: center;
-
 }
 
-/* details summary  {
-      background: url("img/pluse.png") no-repeat scroll 0 0;
-      margin-left: -20px;
-      padding-left:40px;
-  }
-  details[open] summary  {
-      background: url("img/minus.png") no-repeat scroll 0 0;
-  }  */  
-summary::-webkit-details-marker {
- display: none;
+summary {
+  &::-webkit-details-marker { display: none; }
+  &::-moz-list-bullet { list-style-type: none; }
 }
+
 
 details[open] summary ~ * {
   animation: sweep .3s ease-in-out;
@@ -36,6 +73,55 @@ details[open] summary ~ * {
   0%    {opacity: 0; margin-top: -15px}
   100%  {opacity: 1; margin-top: 0px}
 }
+
+@media (min-width: @tablet-width) {
+  .summary::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    width: 6px;
+    height: 25px;
+    background-color: #068EDA;
+  }
+
+  .summary::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 25px;
+    height: 6px;
+    background-color: #068EDA;
+  }
+
+
+  .summary__title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+  }
+
+  .summary__description {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .summary__title {
+    padding: 21px;
+    padding-right: 30px;
+    padding-left: 127px;
+  }
+
+  .summary__description {
+    padding-left: 127px;
+    padding-right:127px;
+    text-align: left;
+  }
+} 
 
 
 
