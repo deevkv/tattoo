@@ -8,7 +8,7 @@
 	border: 3px solid #10A9FF;
 	box-sizing: border-box;
 
-	font-family: "Share";
+	font-family: "Share", "Verdana", "DejaVu Sans", "Geneva CY", "Helvetica CY", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
@@ -24,6 +24,7 @@
 
 	transition: .5s;
 	overflow: hidden;
+	z-index: 1;
 }
 
 
@@ -104,19 +105,23 @@
 .button__up {
 	width: 50px;
 	height: 50px;
+	padding: 13px 0;
 	position: fixed;
 	right: 20px;
 	bottom: 100px;
-	background-color: #068EDA;
+	background-color: #01283e;
 	border: none;
 	z-index: 1000;
 	opacity: 1;
 	box-shadow: 0px 19px 10px rgba(0, 0, 0, 0.39);
   transition: all 0.5s;
+  fill: #119df5;
 }
 
 .button__up:hover {
-	background-color: #10A9FF;
+	background-color: #044970;
+	fill: #ffffff;
+
 }
 
 .button__show {
