@@ -63,7 +63,8 @@ gulp.task("copy", function() {
 			"source/img/**",
 			"source/css/**",
 			"source/js/**",
-			"source/mp3/**"
+			"source/mp3/**",
+			"source/video/**"
 		], {
 			base: "source"
 		})
@@ -85,11 +86,6 @@ gulp.task("sprite", function() {
 		.pipe(rename("sprite.svg"))
 		.pipe(gulp.dest("build/img"));
 });
-
-
-cheerio
-
-
 
 
 gulp.task("html", function() {

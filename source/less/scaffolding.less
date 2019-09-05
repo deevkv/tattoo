@@ -35,6 +35,13 @@ body {
   cursor: url(../img/cursor.png), default;
 }
 
+input,
+textarea {
+  font-size: 20px;
+  font-family: "Share", "Verdana", "DejaVu Sans", "Geneva CY", "Helvetica CY", sans-serif;
+  font-style: normal;
+}
+
 a, button, input {
   outline-color: #FF7A00;
 }
@@ -46,7 +53,10 @@ img {
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+input[type="email"].visually-hidden,
+input[type="tel"].visually-hidden
+ {
   position: absolute;
   width: 1px;
   height: 1px;
