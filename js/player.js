@@ -12,7 +12,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '360',
     width: '640',
-    playerVars: {  'autoplay': 1, 'start': 137, 'controls': 0, 'showinfo': 0, 'rel': 0 },
+    playerVars: {  /*'autoplay': 1,*/ 'start': 137, 'controls': 0, 'showinfo': 0, 'rel': 0 },
     videoId: 'oyvcTOHFl6w',
     events: {
       'onReady': onPlayerReady,
@@ -24,7 +24,9 @@ function onYouTubeIframeAPIReady() {
 
 
 function onPlayerReady(event) {
-  event.target.playVideo();
+  if (modalYouTube.classList.contains('modal-youtube--opened')) {
+    event.target.playVideo();
+  }
 }
 
 
@@ -34,13 +36,18 @@ function onPlayerReady(event) {
   }
 }*/
 
-var done = false;
+/*var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
     setTimeout(stopVideo, 6000);
     done = true;
   }
+}*/
+
+function playVideo() {
+  player.playVideo();
 }
+
 
 function stopVideo() {
   player.stopVideo();
