@@ -30,25 +30,6 @@ function onPlayerReady(event) {
 }
 
 
-/*function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PAUSED) {
-    
-  }
-}*/
-
-/*var done = false;
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
-    done = true;
-  }
-}*/
-
-function playVideo() {
-  player.playVideo();
-}
-
-
 function stopVideo() {
   player.stopVideo();
 }
