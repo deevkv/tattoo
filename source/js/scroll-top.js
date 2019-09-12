@@ -2,7 +2,7 @@ window.onload = function() {
 	let scrolled;
 	let timer;
 
-window.addEventListener ('scroll', function () {
+	window.addEventListener ('scroll', function () {
     const buttonUp = document.querySelector('.button__up');
     if(window.pageYOffset > 1000){
         buttonUp.classList.remove('button__hidden');
@@ -11,7 +11,7 @@ window.addEventListener ('scroll', function () {
         buttonUp.classList.add('button__hidden');
 	  		buttonUp.classList.remove('button__show');
     }
-});
+	});
 
 	document.getElementById('top').onclick = function() {
 		scrolled = window.pageYOffset;
@@ -29,4 +29,5 @@ window.addEventListener ('scroll', function () {
 			window.scrollTo(0,0);
 		}
 	}
+
 }

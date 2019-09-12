@@ -16,8 +16,7 @@
 	position: relative;
 }
 
-
-.site-list__item--active a::before{
+.site-list__item--active a::before {
 		content: "";
     position: absolute;
     right: 0;
@@ -26,9 +25,14 @@
     height: 6px;
     background-color: #FF7A00;
     border-radius: 1px;
-    display: none;
+    opacity: 1;
+  	animation: ShowElement 0.8s;
 }
 
+@keyframes ShowElement {
+		0% {opacity: 0}
+    100% {opacity: 1}
+}
 
 @media (min-width: @tablet-width) {
 	.site-list {
