@@ -16,15 +16,25 @@ function onYouTubeIframeAPIReady() {
     videoId: 'yuJMx7U4J9Q',
     events: {
       'onReady': onPlayerReady,
-      /*'onStateChange': onPlayerStateChange*/
-
+      'onStateChange': onPlayerStateChange
     }
   });
 }
 
-function onPlayerReady(event) {
-    event.target.playVideo();
+ function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+var done = false;
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !done) {
+    if (modalYouTube.classList.contains('modal-youtube--opened')) {
+      player.playVideo();
+      done = true;
+    }
+  }
 }
+
 
 function stopVideo() {
   player.stopVideo();
