@@ -6,7 +6,7 @@ youTubeButtonPlay.addEventListener('click', function() {
 	if (modalYouTube.classList.contains('modal-youtube--closed')) {
     modalYouTube.classList.remove('modal-youtube--closed');
     modalYouTube.classList.add('modal-youtube--opened');
-    playVideo()
+    playVideo();
   } else {
     modalYouTube.classList.add('modal-youtube--closed');
     modalYouTube.classList.remove('modal-youtube--opened');
