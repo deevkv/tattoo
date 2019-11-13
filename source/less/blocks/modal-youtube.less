@@ -10,7 +10,7 @@
   top:0px;
   z-index: 2000;
   opacity: 0;
-  transition: all .5s;
+  transition: opacity .5s;
 }
 
 .modal-youtube__content {
@@ -26,6 +26,12 @@
 .modal-youtube--opened {
   opacity: 1;
   visibility: visible;
+}
+
+.modal-youtube--hidden {
+  overflow: hidden;
+  margin-right: 12px;
+  
 }
 
 .modal-youtube__content iframe {
