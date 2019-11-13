@@ -21,19 +21,19 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
- function onPlayerReady(event) {
-        event.target.playVideo();
-      }
+function onPlayerReady(event) {
+  if (modalYouTube.classList.contains('modal-youtube--opened')) {
+    event.target.playVideo();
+  }
+}
 
 var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
-    if (modalYouTube.classList.contains('modal-youtube--opened')) {
-      player.playVideo();
-      done = true;
-    }
+    done = true;
   }
 }
+
 
 
 function stopVideo() {
