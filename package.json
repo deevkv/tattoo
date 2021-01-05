@@ -27,7 +27,7 @@
     "posthtml-include": "^1.4.3"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "lodash": "^4.17.14",
     "lodash.merge": "^4.6.2",
     "set-value": "^3.0.2"
